@@ -134,6 +134,32 @@ public class ExerciciosLoianeArrays {
         System.out.println("===========SITUAÇÕES DE DIVIDA================");
         System.out.println(Arrays.toString(valorDivida));
         System.out.println("=============================================");
+        
+        //#8----------------------------------------------------------------------------------------
+        int [] mensalidadesJunho= new int[10];
+        int [] mensalidadesJulho= new int[10];
+        int [] totalComJuros= new int[10];
+        
+        for (int i=0; i<mensalidadesJunho.length;i++){
+            mensalidadesJunho[i] = aleatorio.nextInt(5750);
+            mensalidadesJulho[i]= aleatorio.nextInt(5750);
+            totalComJuros[i]= mensalidadesJunho[i]*mensalidadesJulho[i];
+        }
+        System.out.println("==============VALORES JUNHO===================");
+        System.out.println(Arrays.toString(mensalidadesJunho));
+        System.out.println("==============================");
+        
+        System.out.println("===========VALORES JULHO================");
+        System.out.println(Arrays.toString(mensalidadesJulho));
+        System.out.println("=============================================");
+        
+        System.out.println("===========TOTAL DIVIDAS================");
+        System.out.println(Arrays.toString(totalComJuros));
+        System.out.println("=============================================");
+            
+        
+        
+        
     }
     
 }

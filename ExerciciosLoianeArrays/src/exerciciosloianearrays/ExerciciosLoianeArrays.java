@@ -91,6 +91,26 @@ public class ExerciciosLoianeArrays {
         System.out.println("=============================================");
         
         //#6--------------------------------------------------------------------------------------
+        double [] valorUnitarioGrupoA = new double[10];
+        double [] valorUnitarioGrupoB = new double[10];
+        double [] gruposSomados = new double[10];
+        
+        for (int i=0; i<valorUnitarioGrupoA.length; i++){
+            valorUnitarioGrupoA[i] = aleatorio.nextInt(45);
+            valorUnitarioGrupoB[i]= aleatorio.nextInt(65);
+            gruposSomados[i] = valorUnitarioGrupoA[i] + valorUnitarioGrupoB[i];
+        }
+        System.out.println("==============VALOR UNITARIO GRUPO A===================");
+        System.out.println(Arrays.toString(valorUnitarioGrupoA));
+        System.out.println("==============================");
+        
+        System.out.println("===========VALOR UNITARIO GRUPO B================");
+        System.out.println(Arrays.toString(valorUnitarioGrupoB));
+        System.out.println("=============================================");
+        
+        System.out.println("=========== UNIAO DOS GRUPOS================");
+        System.out.println(Arrays.toString(gruposSomados));
+        System.out.println("=============================================");
         
     }
     

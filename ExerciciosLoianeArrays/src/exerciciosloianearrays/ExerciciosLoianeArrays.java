@@ -188,14 +188,37 @@ public class ExerciciosLoianeArrays {
             valoresA[i]= aleatorio.nextInt(200);
             restoPorDois[i] = valoresA[i]%2;
         }
-        System.out.println("==============IMPOSTOS A PAGAR RUA A===================");
-        System.out.println(Arrays.toString(impostoAPagarRuaA));
+        System.out.println("==============VALORES A===================");
+        System.out.println(Arrays.toString(valoresA));
         System.out.println("==============================");
         
-        System.out.println("===========IMPOSTOS A PAGAR RUA B================");
-        System.out.println(Arrays.toString(impostoAPagarRuaB));
+        System.out.println("===========RESTO DA DIVISÃO POR 2================");
+        System.out.println(Arrays.toString(restoPorDois));
         System.out.println("=============================================");
         
+        //#11-----------------------------------------------------------------------------
+        int [] valores = new int [10];
+        int qtdPares=0;
+        for (int i=0; i<valores.length;i++){
+            valores[i]= aleatorio.nextInt(50);
+        }
+        for (int valor: valores){
+            if(valor%2==0){
+                qtdPares= qtdPares +1;
+            }
+        }
+        System.out.println("A quantidade de números pares no conjunto"+Arrays.toString(valores)+" é de "+qtdPares+" valores.");
+        
+        //#12-----------------------------------------------------------------------------
+        int [] valoresASomar = new int[10];
+        int somaDeValores=0;
+        
+        for(int i =0; i<valoresASomar.length;i++){
+            valoresASomar[i]=aleatorio.nextInt(350);
+            somaDeValores= somaDeValores + valoresASomar[i];
+        }
+        System.out.println("A soma dos números no conjunto"+Arrays.toString(valoresASomar)+" é de "+somaDeValores+".");
+
     }
     
 }

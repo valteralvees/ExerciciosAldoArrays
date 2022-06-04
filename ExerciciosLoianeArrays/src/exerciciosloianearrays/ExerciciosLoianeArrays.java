@@ -218,6 +218,19 @@ public class ExerciciosLoianeArrays {
             somaDeValores= somaDeValores + valoresASomar[i];
         }
         System.out.println("A soma dos números no conjunto"+Arrays.toString(valoresASomar)+" é de "+somaDeValores+".");
+        
+        //#13-----------------------------------------------------------------------------
+        int [] valoresMultiplosDeCinco = new int [10];
+        int qtdMultiplos=0;
+        
+        for(int i =0; i<valoresMultiplosDeCinco.length; i++){
+            valoresMultiplosDeCinco[i]= aleatorio.nextInt(150);
+            if (valoresMultiplosDeCinco[i]%5==0){
+                qtdMultiplos= qtdMultiplos + valoresMultiplosDeCinco[i];
+            }
+        }
+        System.out.println("A soma dos números múltiplos de 5 no conjunto"+Arrays.toString(valoresMultiplosDeCinco)+" é de "+qtdMultiplos+".");
+
 
     }
     

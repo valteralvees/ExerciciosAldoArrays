@@ -156,9 +156,45 @@ public class ExerciciosLoianeArrays {
         System.out.println("===========TOTAL DIVIDAS================");
         System.out.println(Arrays.toString(totalComJuros));
         System.out.println("=============================================");
+        
+        //#9----------------------------------------------------------------------------
+        double [] impostoAPagarRuaA= new double[10];
+        double [] impostoAPagarRuaB=new double[10];
+        double[] valorPromocionalUnitario= new double[10];
+        
+        for (int i=0; i<impostoAPagarRuaA.length;i++){
+            impostoAPagarRuaA[i]= aleatorio.nextInt(450);
+            impostoAPagarRuaB[i]= aleatorio.nextInt(580);
+            valorPromocionalUnitario[i] = impostoAPagarRuaA[i]/impostoAPagarRuaB[i];
             
+        }
+        System.out.println("==============IMPOSTOS A PAGAR RUA A===================");
+        System.out.println(Arrays.toString(impostoAPagarRuaA));
+        System.out.println("==============================");
         
+        System.out.println("===========IMPOSTOS A PAGAR RUA B================");
+        System.out.println(Arrays.toString(impostoAPagarRuaB));
+        System.out.println("=============================================");
         
+        System.out.println("===========VALOR PROMOCIONAL POR RESIDENCIA até DIA 15================");
+        System.out.println(Arrays.toString(valorPromocionalUnitario));
+        System.out.println("=============================================");
+        
+        //#10------------------------------------------------------------------------------
+        int [] valoresA= new int [10];
+        int[] restoPorDois= new int [10];
+        
+        for (int i=0;i<valoresA.length;i++){
+            valoresA[i]= aleatorio.nextInt(200);
+            restoPorDois[i] = valoresA[i]%2;
+        }
+        System.out.println("==============IMPOSTOS A PAGAR RUA A===================");
+        System.out.println(Arrays.toString(impostoAPagarRuaA));
+        System.out.println("==============================");
+        
+        System.out.println("===========IMPOSTOS A PAGAR RUA B================");
+        System.out.println(Arrays.toString(impostoAPagarRuaB));
+        System.out.println("=============================================");
         
     }
     

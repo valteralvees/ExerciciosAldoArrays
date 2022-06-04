@@ -73,6 +73,25 @@ public class ExerciciosLoianeArrays {
         System.out.println("===========RAIZ QUADRADA DAS COBRANCAS================");
         System.out.println(Arrays.toString(cobrancasRaiz));
         System.out.println("=============================================");
+        
+        //#5---------------------------------------------------------------------------------------
+        double [] alugueis = new double[15];
+        double [] alugueisPosAumento = new double[15];
+        
+        for (int i=0; i<alugueis.length; i++){
+            alugueis[i]= aleatorio.nextInt(5500);
+            alugueisPosAumento[i]= alugueis[i]* i; 
+        }
+        System.out.println("==============ALUGUEIS ATUAL===================");
+        System.out.println(Arrays.toString(alugueis));
+        System.out.println("==============================");
+        
+        System.out.println("===========ALUGUEIS PÓS AUMENTO================");
+        System.out.println(Arrays.toString(alugueisPosAumento));
+        System.out.println("=============================================");
+        
+        //#6--------------------------------------------------------------------------------------
+        
     }
     
 }

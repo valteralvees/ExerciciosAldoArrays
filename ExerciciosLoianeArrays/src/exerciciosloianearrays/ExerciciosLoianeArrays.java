@@ -231,7 +231,22 @@ public class ExerciciosLoianeArrays {
         }
         System.out.println("A soma dos números múltiplos de 5 no conjunto"+Arrays.toString(valoresMultiplosDeCinco)+" é de "+qtdMultiplos+".");
 
-
+        //#14-----------------------------------------------------------------------------
+        int [] valoresImpares = new int [10];
+        int qtdImpares=0;
+        int somatoriaImpares= 0;
+        double mediaImpares=0;
+        
+        for (int i=0; i<valoresImpares.length;i++){
+            valoresImpares[i]=aleatorio.nextInt(450);
+            if(valoresImpares[i]%2==1){
+                qtdImpares= qtdImpares + 1;
+                somatoriaImpares= somatoriaImpares +valoresImpares[i];
+            }
+        }
+        mediaImpares = somatoriaImpares/qtdImpares;
+        
+        System.out.println("A média entre os "+qtdImpares+ " números ímpares do conjunto "+Arrays.toString(valoresImpares)+" é de "+mediaImpares+". A somatória entre eles é de "+somatoriaImpares);
     }
     
 }

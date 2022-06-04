@@ -112,6 +112,28 @@ public class ExerciciosLoianeArrays {
         System.out.println(Arrays.toString(gruposSomados));
         System.out.println("=============================================");
         
+        //#7------------------------------------------------------------------------------------
+        double [] valoresFiados= new double[10];
+        double [] totaisPagos = new double[10];
+        double [] valorDivida = new double[10];
+        
+        for(int i=0; i<valoresFiados.length;i++){
+            valoresFiados[i]= aleatorio.nextInt(250);
+            totaisPagos[i] = aleatorio.nextInt(200);
+            valorDivida[i]= valoresFiados[i]-totaisPagos[i];
+            
+        }
+        System.out.println("==============VALORES FIADOS===================");
+        System.out.println(Arrays.toString(valoresFiados));
+        System.out.println("==============================");
+        
+        System.out.println("===========VALORES PAGOS================");
+        System.out.println(Arrays.toString(totaisPagos));
+        System.out.println("=============================================");
+        
+        System.out.println("===========SITUAÇÕES DE DIVIDA================");
+        System.out.println(Arrays.toString(valorDivida));
+        System.out.println("=============================================");
     }
     
 }

@@ -247,6 +247,22 @@ public class ExerciciosLoianeArrays {
         mediaImpares = somatoriaImpares/qtdImpares;
         
         System.out.println("A média entre os "+qtdImpares+ " números ímpares do conjunto "+Arrays.toString(valoresImpares)+" é de "+mediaImpares+". A somatória entre eles é de "+somatoriaImpares);
+        
+        //#15-------------------------------------------------------------------------------
+        int [] vetorPercentual = new int[10];
+        int qtdNumPares=0;
+        int qtdNumImpares=0;
+        
+        for(int i=0;i<vetorPercentual.length;i++){
+            vetorPercentual[i]=aleatorio.nextInt(60);
+            if(vetorPercentual[i]%2==0){
+                qtdNumPares= qtdNumPares+1;
+            
+            }else if(vetorPercentual[i]%2==1){
+                qtdNumImpares = qtdNumImpares+1;
+            }
+        }
+        System.out.println("O número de valores IMPARES equivale a "+qtdNumImpares+"0% do total de elementos do conjunto. Já os números pares equivalem a "+qtdNumPares+"0% do total de 10 elementos.");
     }
     
 }

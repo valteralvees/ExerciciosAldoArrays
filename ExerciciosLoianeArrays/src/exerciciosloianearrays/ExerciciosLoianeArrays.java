@@ -263,6 +263,65 @@ public class ExerciciosLoianeArrays {
             }
         }
         System.out.println("O número de valores IMPARES equivale a "+qtdNumImpares+"0% do total de elementos do conjunto. Já os números pares equivalem a "+qtdNumPares+"0% do total de 10 elementos.");
+        
+        //#16------------------------------------------------------------------------------
+        int [] qtdAlunosNasSalas= new int[10];
+        double menor15=0;
+        double igual15=0;
+        double qtdMaior15=0;
+        double maior15=0;
+        for(int i =0; i<qtdAlunosNasSalas.length;i++){
+            qtdAlunosNasSalas[i]= aleatorio.nextInt(250);
+            if(qtdAlunosNasSalas[i]<15){
+                menor15 = menor15+qtdAlunosNasSalas[i];
+            }else if(qtdAlunosNasSalas[i]>15){
+                qtdMaior15= qtdMaior15+ 1;
+                maior15= maior15+qtdAlunosNasSalas[i];
+            } else if(qtdAlunosNasSalas[i]==15){
+                igual15= igual15+1;
+            }
+        }
+        double mediaMaior15 =maior15/qtdMaior15;
+        System.out.println("==================================");
+        System.out.println(Arrays.toString(qtdAlunosNasSalas));
+        System.out.println("==================================");
+        System.out.println("A soma dos elementos inferiores a 15 é de "+menor15+". A quantidade de elementos iguais a 15 nesse vetor é de "+igual15+". Já a média dos "+qtdMaior15+" elementos maiores que 15 é "+mediaMaior15);
+        
+        //#17-----------------------------------------------------------------------------
+        int[] idadesGalera= new int[10];
+        int superior35=0;
+        for(int i=0; i<idadesGalera.length;i++){
+            idadesGalera[i]= aleatorio.nextInt(85);
+            if(idadesGalera[i]>35){
+                superior35= superior35 +1;
+            }
+        }
+        System.out.println("O número de pessoas maiores que 35 anos é de "+superior35);
+        
+        //#18-----------------------------------------------------------------------------
+        int [] idadesPessoal = new int[10];
+        int testeMaior=0;
+        int testeMenor=100;
+        int guardaMaior=0;
+        int guardaMenor=0;
+        int posicaoMaior=0;
+        int posicaoMenor=0;
+        for (int i=0; i<idadesPessoal.length; i++){
+            idadesPessoal[i] = aleatorio.nextInt(85);
+            int guardaValor= idadesPessoal[i];
+            if(idadesPessoal[i]> guardaMaior){
+                guardaMaior= idadesPessoal[i];
+                posicaoMaior=i;
+            } else if(idadesPessoal[i]<testeMenor){
+                testeMenor= idadesPessoal[i];
+                posicaoMenor=i;
+            }
+        }
+        System.out.println("==================================");
+        System.out.println(Arrays.toString(idadesPessoal));
+        System.out.println("==================================");
+        System.out.println("A maior das idades do conjunto é a de "+guardaMaior+" anos, que está na posição "+posicaoMaior+". Já a menor idade é a de "+testeMenor+" anos, que está localizada na posição "+posicaoMenor+" do conjunto.");
+        
     }
     
 }

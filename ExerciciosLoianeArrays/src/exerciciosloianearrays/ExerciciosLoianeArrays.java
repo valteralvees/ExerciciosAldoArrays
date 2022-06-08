@@ -322,6 +322,15 @@ public class ExerciciosLoianeArrays {
         System.out.println("==================================");
         System.out.println("A maior das idades do conjunto é a de "+guardaMaior+" anos, que está na posição "+posicaoMaior+". Já a menor idade é a de "+testeMenor+" anos, que está localizada na posição "+posicaoMenor+" do conjunto.");
         
+        //#19------------------------------------------------------------------------------
+        float[] nota1 = new float[10];
+        float[] nota2 = new float[10];
+        float [] result = new float[10];
+        
+        for(int i=0; i<nota1.length;i++){
+            
+        }
+        
     }
     
 }

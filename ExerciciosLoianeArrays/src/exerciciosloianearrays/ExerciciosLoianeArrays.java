@@ -324,6 +324,7 @@ public class ExerciciosLoianeArrays {
         System.out.println("A maior das idades do conjunto é a de "+guardaMaior+" anos, que está na posição "+posicaoMaior+". Já a menor idade é a de "+testeMenor+" anos, que está localizada na posição "+posicaoMenor+" do conjunto.");
         
         //#19------------------------------------------------------------------------------
+        /*
         float[] nota1 = new float[10];
         float[] nota2 = new float[10];
         float [] result = new float[10];
@@ -342,9 +343,14 @@ public class ExerciciosLoianeArrays {
                 System.out.println("Aluno "+(i+1)+" APROVADO, pois obteve média "+ result[i]);
             }
         }
-        
+        */
         //#20-----------------------------------------------------------------------------
-        
+        double [] dolares = new double[20];
+        double real = 4.87;
+        for (int i=0; i<dolares.length;i++){
+            dolares[i]= i * real;
+            System.out.println("US$"+(i)+" dólar(es) equivale a R$"+ dolares[i]+ " reais.");
+        }
     }
     
 }

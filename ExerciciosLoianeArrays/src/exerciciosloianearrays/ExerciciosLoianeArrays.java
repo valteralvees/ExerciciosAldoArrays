@@ -3,6 +3,7 @@ package exerciciosloianearrays;
 //Imports
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 
 public class ExerciciosLoianeArrays {
@@ -326,10 +327,23 @@ public class ExerciciosLoianeArrays {
         float[] nota1 = new float[10];
         float[] nota2 = new float[10];
         float [] result = new float[10];
-        
+        Scanner teclado = new Scanner(System.in);
         for(int i=0; i<nota1.length;i++){
-            
+            System.out.println("Digite a 1a nota do aluno "+(i+1));
+            nota1[i]= teclado.nextFloat();
+            System.out.println("Digite a 2a nota do aluno "+(i+1));
+            nota2[i]= teclado.nextFloat();
+            result[i]= (nota1[i]+nota2[i])/2;
         }
+        for (int i=0; i<nota1.length;i++){
+            if (result[i]<7){
+                System.out.println("Aluno "+(i+1)+" REPROVADO, pois obteve média "+ result[i]);
+            } else {
+                System.out.println("Aluno "+(i+1)+" APROVADO, pois obteve média "+ result[i]);
+            }
+        }
+        
+        //#20-----------------------------------------------------------------------------
         
     }
     

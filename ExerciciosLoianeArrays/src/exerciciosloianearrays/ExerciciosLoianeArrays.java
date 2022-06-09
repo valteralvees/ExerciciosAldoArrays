@@ -344,13 +344,42 @@ public class ExerciciosLoianeArrays {
             }
         }
         */
-        //#20-----------------------------------------------------------------------------
+        //#20 e #21-----------------------------------------------------------------------------
         double [] dolares = new double[20];
         double real = 4.87;
         for (int i=0; i<dolares.length;i++){
             dolares[i]= i * real;
             System.out.println("US$"+(i)+" dólar(es) equivale a R$"+ dolares[i]+ " reais.");
         }
+        
+        //#22-----------------------------------------------------------------------------
+        int [] numerais = new int[10];
+        int conta0=0;
+        int conta1=0;
+        
+        for (int i=0; i<numerais.length;i++){
+            numerais[i]= aleatorio.nextInt(2);
+            if(numerais[i]==0){
+                conta0=conta0+1;
+            } else if(numerais[i]==1){
+                conta1=conta1+1;
+            }
+        }
+        System.out.println(Arrays.toString(numerais));
+        System.out.println("O array acima tem o percentual de "+conta0+"0% de números 0 e "+conta1+"0% de números 1");
+        
+        //#23-----------------------------------------------------------------------------
+        int [] soPares= new int[10];
+        for (int i=0; i<soPares.length;i++){
+            soPares[i]= aleatorio.nextInt(11);
+            if(soPares[i]%2==1){
+                System.out.println("NÚMERO ÍMPAR DETECTADO...");
+                break;
+            }
+            
+        }
+        System.out.println(Arrays.toString(soPares));
+        System.out.println("LOOP ENCERRADO");
     }
     
 }

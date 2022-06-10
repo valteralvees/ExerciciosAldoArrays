@@ -380,6 +380,42 @@ public class ExerciciosLoianeArrays {
         }
         System.out.println(Arrays.toString(soPares));
         System.out.println("LOOP ENCERRADO");
+        
+        //#24----------------------------------------------------------------------------
+        int [] numPalindromos = new int[11];
+        for (int i=0; i<numPalindromos.length;i++){
+            numPalindromos[i]= aleatorio.nextInt(10);
+            
+        }
+        if(numPalindromos[0]==numPalindromos[10]){
+                System.out.println("PRIMEIRA DUPLA IGUAL");
+            } else if(numPalindromos[1]==numPalindromos[9]){
+                System.out.println("SEGUNDA DUPLA IGUAL");
+            }else if(numPalindromos[2]==numPalindromos[8]){
+                System.out.println("TERCEIRA DUPLA IGUAL");
+            }else if(numPalindromos[3]==numPalindromos[7]){
+                System.out.println("QUARTA DUPLA IGUAL");
+            }else if(numPalindromos[4]==numPalindromos[6]){
+                System.out.println("QUINTA DUPLA IGUAL");
+                System.out.println("NÚMERO PALÍNDROMO");
+            }
+        System.out.println(Arrays.toString(numPalindromos));
+        
+        //#25--------------------------------------------------------------------------
+        int [] vetorA = new int[10];
+        int[] vetorB = new int[10];
+        for (int i=0; i<vetorA.length;i++){
+            vetorA[i]=aleatorio.nextInt(10);
+            if(vetorA[i]%2==0){
+                vetorB[i]=1;
+            }else if(vetorA[i]%2==1){
+                vetorB[i]=0;
+            }
+        }
+        System.out.println("======================25=========================");
+        System.out.println(Arrays.toString(vetorA));
+        System.out.println(Arrays.toString(vetorB));
+        
     }
     
 }

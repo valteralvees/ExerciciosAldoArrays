@@ -1,6 +1,7 @@
 
 package exerciciosloianearrays;
 //Imports
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -415,6 +416,53 @@ public class ExerciciosLoianeArrays {
         System.out.println("======================25=========================");
         System.out.println(Arrays.toString(vetorA));
         System.out.println(Arrays.toString(vetorB));
+        
+        //#26-------------------------------------------------------------------------
+        int [] arrayA = new int[10];
+        int [] arrayB = new int[10];
+        
+        float [] arrayC = new float[10];
+        
+        for (int i=0; i<arrayA.length; i++){
+            arrayA[i]= aleatorio.nextInt(15);
+            arrayB[i]= aleatorio.nextInt(15);
+            if(arrayA[i]<arrayB[i]){
+                arrayC[i]= -1;
+            } else if(arrayA[i]>arrayB[i]){
+                arrayC[i]= 1;
+            } else if(arrayA[i]==arrayB[i]){
+                arrayC[i]=0;
+            }
+        }
+        System.out.println("=====================26================");
+        System.out.println(Arrays.toString(arrayA));
+        System.out.println(Arrays.toString(arrayB));
+        System.out.println(Arrays.toString(arrayC));
+        System.out.println("============================================");
+        
+        //#27------------------------------------------------------------------------
+        int [] array1 = new int[10];
+        char [] letras = new char[10];
+        
+        for (int i=0; i<array1.length;i++){
+            array1[i]= aleatorio.nextInt(15);
+            if(array1[i]<7){
+                letras[i]= 'a';
+            } else if(array1[i]==7){
+                letras[i]='b';
+            } else if(array1[i]>7 && array1[i]<10){
+                letras[i]='c';
+            } else if(array1[i]==10){
+                letras[i]='d';
+            } else if(array1[i]>10){
+                letras[i]='e';
+            }
+        }
+        System.out.println("============================================");
+               
+        
+        
+        
         
     }
     

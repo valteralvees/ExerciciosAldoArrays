@@ -458,10 +458,54 @@ public class ExerciciosLoianeArrays {
                 letras[i]='e';
             }
         }
-        System.out.println("============================================");
-               
+        System.out.println("========================27====================");
+        System.out.println(Arrays.toString(array1));
+        System.out.println(Arrays.toString(letras));
+        System.out.println("==============================================");
         
+        //#28---------------------------------------------------------------
+        int [] vetorzinhoA = new int[10];
+        int [] vetorzinhoB = new int[10];
+        int teste1=0;
         
+        for (int i=0; i<vetorzinhoA.length;i++){
+            vetorzinhoA[i]= aleatorio.nextInt(14);
+            System.out.println("!!!!!!!!!!!!!!!!!!!");
+            int j=10;
+            j--;
+            System.out.println(j);
+            
+            
+        }
+        
+        System.out.println("===================28==================");
+        System.out.println(Arrays.toString(vetorzinhoA));
+        System.out.println(Arrays.toString(vetorzinhoB));
+        System.out.println("=======================================");
+        
+        //#29--------------------------------------------------------------
+        int [] valoresA1 = new int [10];
+        int [] valoresB1 = new int [10];
+        int [] juncaoAB = new int[20];
+        for(int i =0; i< valoresA1.length;i++){
+            valoresA1[i] = aleatorio.nextInt(10);
+            valoresB1[i] = aleatorio.nextInt(10);
+        }
+        
+        for (int i=0; i<juncaoAB.length;i++){
+            if(i<10){
+                juncaoAB[i]= valoresA1[i];   
+            }else if(i>9){
+                juncaoAB[i] = valoresB1[i]; 
+            } 
+              
+        }
+        
+        System.out.println("=================29=======================");
+        System.out.println(Arrays.toString(valoresA1));
+        System.out.println(Arrays.toString(valoresB1));
+        System.out.println(Arrays.toString(juncaoAB));
+        System.out.println("==========================================");
         
         
     }

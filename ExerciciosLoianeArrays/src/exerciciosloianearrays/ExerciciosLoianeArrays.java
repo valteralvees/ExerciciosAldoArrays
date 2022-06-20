@@ -495,8 +495,6 @@ public class ExerciciosLoianeArrays {
         for (int i=0; i<juncaoAB.length;i++){
             if(i<10){
                 juncaoAB[i]= valoresA1[i];   
-            }else if(i>9){
-                juncaoAB[i] = valoresB1[i]; 
             } 
               
         }
@@ -507,6 +505,57 @@ public class ExerciciosLoianeArrays {
         System.out.println(Arrays.toString(juncaoAB));
         System.out.println("==========================================");
         
+        //#30--------------------------------------------------------------------
+        int [] vamosDeVetor = new int [20];
+        int [] vamosDeVetorPares = new int [20];
+        int [] vamosDeVetorImpares = new int [20];
+        
+        for (int i =0; i<vamosDeVetor.length;i++){
+            vamosDeVetor[i]= aleatorio.nextInt(25);
+            if(vamosDeVetor[i]%2==0){
+                vamosDeVetorPares[i]=vamosDeVetor[i];
+            }else if(vamosDeVetor[i]%2==1){
+                vamosDeVetorImpares[i]= vamosDeVetor[i];
+            }
+        }
+        System.out.println("==================30=======================");
+        System.out.println(Arrays.toString(vamosDeVetor));
+        System.out.println(Arrays.toString(vamosDeVetorPares));
+        System.out.println(Arrays.toString(vamosDeVetorImpares));
+        System.out.println("==========================================");
+        
+        //#31-------------------------------------------------------------------
+        int [] eitaVetor = new int[20];
+        int [] vetorBParImpar = new int [20];
+        
+        for (int i=0; i<eitaVetor.length;i++){
+            
+        }
+        
+        //#32-------------------------------------------------------------------
+        int [] numeroVirgem = new int[5];
+        int [] tabuadaNumeros1 = new int[5]; 
+        int [] tabuadaNumeros2 = new int[5]; 
+        int [] tabuadaNumeros3 = new int[5]; 
+        int [] tabuadaNumeros4 = new int[5]; 
+        int [] tabuadaNumeros5 = new int[5]; 
+        
+        for (int i=0; i<numeroVirgem.length; i++){
+            numeroVirgem[i] = aleatorio.nextInt(15);
+            tabuadaNumeros1[i]= numeroVirgem[i]*1;
+            tabuadaNumeros2[i]= numeroVirgem[i]*2;
+            tabuadaNumeros3[i]= numeroVirgem[i]*3;
+            tabuadaNumeros4[i]= numeroVirgem[i]*4;
+            tabuadaNumeros5[i]= numeroVirgem[i]*5;
+        }
+        System.out.println("==================32=======================");
+        System.out.println(Arrays.toString(numeroVirgem));
+        System.out.println(Arrays.toString(tabuadaNumeros1));
+        System.out.println(Arrays.toString(tabuadaNumeros2));
+        System.out.println(Arrays.toString(tabuadaNumeros3));
+        System.out.println(Arrays.toString(tabuadaNumeros4));
+        System.out.println(Arrays.toString(tabuadaNumeros5));
+        System.out.println("==========================================");
         
     }
     
